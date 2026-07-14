@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;900&family=JetBrains+Mono:wght@300;400;500;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff4d00;
+}
+
+/* Sidebar decorative writing style */
+.sidebar-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  opacity: 0.35;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+/* Grid overlay lines */
+.grid-line-vertical {
+  position: fixed;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.035);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.grid-line-horizontal {
+  position: fixed;
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.035);
+  z-index: 1;
+  pointer-events: none;
+}

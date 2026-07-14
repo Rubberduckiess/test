@@ -1,0 +1,6 @@
+{
+  "name": "Random Number Generator",
+  "description": "A clean, modern, and feature-rich random number generator featuring custom ranges, multiple numbers, dice rolling, coin flipping, and generation history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
